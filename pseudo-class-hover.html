@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table colorfull</title>
+    <style>
+     table{
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+      table th,td {
+        border: 2px solid rgb(42, 42, 237);
+        
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        
+      }
+
+      tr th {
+        background-color: rgb(165 42 165);
+        color: azure;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: aqua;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: rgb(162, 161, 161);
+      }
+
+      tbody td:hover {
+        background-color: rgb(109, 180, 156);
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Planet</th>
+          <th colspan="3">Distance</th>
+          <th colspan="2" rowspan="2">
+            Period of revolution T,<br />
+            in years
+          </th>
+          <th colspan="2">Mass</th>
+        </tr>
+        <tr>
+          <th>x10<sup>8</sup></th>
+          <th colspan="2">
+            in adtronomical<br />units [au] and the<br />decimal logarithm<br />of
+            the distances
+          </th>
+          <th>x10<sup>24</sup></th>
+          <th>In Earth</th>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Km</th>
+          <th>[au]</th>
+          <th>log(dis)</th>
+          <th>[y]</th>
+          <th>log(T)</th>
+          <th>[Kg]</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Mercury</th>
+          <td>0.58</td>
+          <td>0.39</td>
+          <td>-0.4089</td>
+          <td>0.24</td>
+          <td>-0.6198</td>
+          <td>0.33</td>
+          <td>0.056</td>
+        </tr>
+        <tr>
+          <th>Venus</th>
+          <td>1.08</td>
+          <td>0.72</td>
+          <td>-0.1427</td>
+          <td>0.61</td>
+          <td>-0.2147</td>
+          <td>4.9</td>
+          <td>0.81</td>
+        </tr>
+        <tr>
+          <th>Earth</th>
+          <td>1.50</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>6.0</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <th>Mars</th>
+          <td>2.28</td>
+          <td>1.52</td>
+          <td>0.1818</td>
+          <td>1.88</td>
+          <td>0.2741</td>
+          <td>0.64</td>
+          <td>0.11</td>
+        </tr>
+        <tr>
+          <th>Jupiter</th>
+          <td>7.78</td>
+          <td>5.20</td>
+          <td>0.7160</td>
+          <td>11.86</td>
+          <td>1.0741</td>
+          <td>19.000</td>
+          <td>318</td>
+        </tr>
+        <tr>
+          <th>Saturn</th>
+          <td>14.27</td>
+          <td>9.55</td>
+          <td>0.9800</td>
+          <td>29.46</td>
+          <td>1.4692</td>
+          <td>5.700</td>
+          <td>05</td>
+        </tr>
+        <tr>
+          <th>Uranus</th>
+          <td>28.69</td>
+          <td>19.20</td>
+          <td>1.2833</td>
+          <td>84.01</td>
+          <td>1.9243</td>
+          <td>88</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <th>Neptune</th>
+          <td>44.98</td>
+          <td>30.1</td>
+          <td>1.4786</td>
+          <td>164.79</td>
+          <td>2.2169</td>
+          <td>100</td>
+          <td>17</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
